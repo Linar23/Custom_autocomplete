@@ -1,0 +1,77 @@
+﻿body {
+  background: #f5f5f5;
+}
+* {
+  font-size: 14px;
+  font-family: 'Segoe UI';
+  line-height: 20px;
+}
+.autocomplete .close.visible {
+  display: block;
+}
+#inputCity {
+  padding: 5px 5px;
+  width: 270px;
+  font-size: 14px;
+}
+.list {
+  background: #fff;
+  width: 350px;
+  display: none;
+  min-height: 40px;
+  max-height: 380px;
+  overflow: hidden;
+  border-top: 1px solid #f4f4f4;
+}
+.list.open {
+  display: block;
+}
+.list #Element{
+  padding: 8px 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.selected {
+  background: rgb(81,153,219);
+  color:white;
+}
+.list #topTipElement {
+  padding: 1px 8px;
+  font-size: 12px;
+  color: #808080;
+  pointer-events: none; 
+}
+.list #bottomTipElement {
+  padding: 1px 8px;
+  font-size: 12px;
+  color: #808080;
+  pointer-events: none; 
+}
+.list #notFoundElement {
+  padding: 8px 8px;
+  font-size: 14px;
+  color: #808080;
+  pointer-events: none; 
+}
+.list #popularListElement {
+  padding: 8px 8px;
+  font-size: 14px;
+  pointer-events: none; 
+}
+.list #loader {
+    font-size:14px;
+    padding:6px;
+    color:gray;
+}
+.list #loader > img {  
+    padding-right:5px; 
+    width: 18px;
+}
+.autocomplete #inputCity.validated{
+  border:solid 2px;
+  border-color: red;
+}
+.autocomplete #textValidation {
+    width:270px;
+    color: red;
+}
