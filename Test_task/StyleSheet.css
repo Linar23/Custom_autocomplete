@@ -29,33 +29,36 @@
 .list #Element{
   padding: 8px 8px;
   font-size: 14px;
-  cursor: pointer;
+  cursor:pointer;
 }
 .selected {
-  background: rgb(81,153,219);
   color:white;
+  background: rgb(81,153,219);
 }
-.list #topTipElement {
-  padding: 1px 8px;
-  font-size: 12px;
-  color: #808080;
-  pointer-events: none; 
+#refreshElement {
+  padding: 8px 8px;
+  color:white;
+  background: rgb(81,153,219);
+  cursor:pointer; 
 }
-.list #bottomTipElement {
-  padding: 1px 8px;
-  font-size: 12px;
-  color: #808080;
-  pointer-events: none; 
+#appendElement.selected {
+  color:white;
+  background: rgb(81,153,219);
+}
+#appendElement {
+  color: rgb(81,153,219);
+  padding: 10px 8px;
+  font-size: 14px;
+  cursor:pointer; 
+}
+#errorElement {
+  color:#c4bebe;
+  padding: 6px 8px;
 }
 .list #notFoundElement {
   padding: 8px 8px;
   font-size: 14px;
   color: #808080;
-  pointer-events: none; 
-}
-.list #popularListElement {
-  padding: 8px 8px;
-  font-size: 14px;
   pointer-events: none; 
 }
 .list #loader {
@@ -74,4 +77,7 @@
 .autocomplete #textValidation {
     width:270px;
     color: red;
+}
+.selected-gray {
+  background:#c4bebe;
 }

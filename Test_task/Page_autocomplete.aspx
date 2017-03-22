@@ -9,8 +9,7 @@
     <script src="Script.js"></script>
 </head>
 <body>
-    <div class="autocomplete">      
-        <input id="inputCity" placeholder="Начните вводить код или название" autocomplete="off" onkeypress="return handle(event)">        
+    <div class="autocomplete">                     
     </div>  
     <div class="list">
     </div> 

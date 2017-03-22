@@ -25,7 +25,7 @@ namespace Test_task
                 string[] kladrItemParsed = listKladr[i].City.ToString().Split(' ', '-', '.', '"', '(', ')');
 
                 // Распарсенная входная строка
-                string[] inputParsed = input.ToString().Split(' ', '-', '.');
+                string[] inputParsed = input.ToString().Split(' ', '-', '.', '"', '(', ')');
 
                 // Список для хранения индексов тех слов в названии населенного пункта, которые были уже найдены
                 // чтобы их еще раз не проверять на вхождение
@@ -47,7 +47,7 @@ namespace Test_task
                         else
                         {
                             // Если слово во входной строке непоследнее, 
-                            // то нужно проверить на полное вхождение предыдущие слова входной строки
+                            // то нужно проверить его на полное вхождение
                             if (k < inputParsed.Length - 1)
                             {
                                 if ((kladrItemParsed[l].ToLowerInvariant().StartsWith(inputParsed[k].ToLowerInvariant())))
@@ -91,7 +91,7 @@ namespace Test_task
             return listResult;
         }
 
-        public static List<Kladr> SelectFiveElements(List<Kladr> listResult)
+        public static List<Kladr> SelectFiveElements(List<Kladr> listResult,string input)
         {
             // Выборка 5 элементов из результатов поиска
             List<Kladr> resultFiveElements = new List<Kladr>();
@@ -102,12 +102,8 @@ namespace Test_task
                 {
                     resultFiveElements.Add(listResult[i]);
                 }
-                // Элемент, хранящий информацию о результате поиска
-                Kladr infoElement = new Kladr();
-                infoElement.City = " Показано 5 из " + listResult.Count + " найденных городов.Уточните запрос чтобы увидеть остальные";
-                resultFiveElements.Add(infoElement);
             }
-            else if (listResult.Count != 0)
+            else
             {
                 resultFiveElements = listResult;
             };
@@ -134,9 +130,10 @@ namespace Test_task
             SearchingMethod(listKladr, input, listResult);
 
             // Выборка 5 элементов для отображения результатов
-            return SelectFiveElements(listResult);
+            return SelectFiveElements(listResult,input);
         }
 
+        // Добавляем новый населенный пункт в базу
         [WebMethod]
         public static void GetCityFromInput(string input)
         {

@@ -17,6 +17,6 @@ C:\Users\Линар\Desktop\Test_task\Test_task\bin\Microsoft.CodeDom.Providers.
 C:\Users\Линар\Desktop\Test_task\Test_task\bin\Newtonsoft.Json.dll
 C:\Users\Линар\Desktop\Test_task\Test_task\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Линар\Desktop\Test_task\Test_task\bin\Newtonsoft.Json.xml
-C:\Users\Линар\Desktop\Test_task\Test_task\obj\Debug\Test_task.csprojResolveAssemblyReference.cache
 C:\Users\Линар\Desktop\Test_task\Test_task\obj\Debug\Test_task.dll
 C:\Users\Линар\Desktop\Test_task\Test_task\obj\Debug\Test_task.pdb
+C:\Users\Линар\Desktop\Test_task\Test_task\obj\Debug\Test_task.csprojResolveAssemblyReference.cache
